@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angel Farre Echaburua</title>
+    <link rel="icon" type="image/x-icon" href="man.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="TabbedGalleryStyles.css"/>
+    <link rel="stylesheet" href="CarouselStyles.css"/>
+    <script src="Scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+        <a href="Dartscript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        
+        <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://stackoverflow.com/users/7060082/afarre" target="_blank">
+              <i class="fa-brands fa-stack-overflow fa-2xl"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/afarre" target="_blank">
+             <i data-feather="github"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/angel-farre/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.artstation.com/angel_fe" target="_blank">
+             <i class="fa-brands fa-artstation fa-xl"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <p class="w3-container w3-padding-16">
+          <a href="./Angel_Farre_cv.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="Angel_Farre_cv.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </p>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM VITAE</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#portfolio" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PORTFOLIO</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"We did what we could, we suffered what we should."</p>
+            <h1 align="left">Angel Farre Echaburua</h1>
+            <h2>Programmer</h2>
+            <h4>C++, C, Unreal Engine 5</h4>
+            <h6>Working towards better, enticing and appealing games that deliver a great player experience.</h6>
+          </div>
+
+          <!--PORTFOLIO SECTION-->
+          <div id="portfolio" class="w3-container w3-margin-top-20-percent w3-cursive w3-large" >
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PORTFOLIO</h2>
+            <p class="w3-margin-top-2"> 
+              What follows is a showcase of some of my projects. Some are focused just on environment and art, others are focused 
+              in C++ programming. These projects have taught me much about different disciplines, and I'm currently focused 
+              on putting my knowledge together into a single project. My goal is to make a small game that shows all my environment, 
+              animation, programming, AI, UI... skills put together.
+            </p>
+            <!-- Image tabbed gallery -->
+            <div>
+                <div style="text-align:center">
+                    <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/059/266/939/large/angel-farre-echaburua-highresscreenshot00004.jpg?1675989119" alt="Lighting & camera settings" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/059/661/191/large/angel-farre-echaburua-pick-up-weapon.jpg?1676891304" alt="Interactions and screen prompts" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/058/798/117/large/angel-farre-echaburua-flat2.jpg?1675009460" alt="First project, designing my flat reform" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://i.imgur.com/oPdkx2N.png" alt="HUD and UI interactions" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div id="imgtext"></div>
+                </div>
+            </div>
+
+            <div style="text-align:center">
+                    <p style="font-size:16px">»»————————　◆　————————««</p>
+                </div>
+
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/J2rsQ2H-sO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="video" allowfullscreen></iframe>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/dEPFeZI_IxE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="video" allowfullscreen></iframe>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Pa-hbj_moos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="video" allowfullscreen></iframe>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/iVxCx8DT3CQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="video" allowfullscreen></iframe>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/YZq-SGe8XG8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="video" allowfullscreen></iframe>
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+
+            <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if(n > slides.length) {
+                  slideIndex = 1
+                }
+                if(n < 1) {
+                  slideIndex = slides.length
+                }
+                for(i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for(i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+              }
+            </script>
+          </div>
+        
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber">❧ MY EMPLOYMENT HISTORY</h3>
+              
+              <h2 class="w3-border-bottom w3-border-gray" style="border-width: 1px !important;"></h2>
+
+              <div class="w3-container w3-margin-top-2 w3-cursive">
+                <h4 style="font-weight: bold">Webhelp</h4>
+                <h5 style="font-weight: bold">Quality Assurance</h5>
+                <p>December 2021 - September 2023</p>
+                <ul class="w3-ul" style="font-weight: 500;">  
+                  <h6>➢ Functions</h6>
+                  <ul>
+                    <li>Analyse and qualify the technical performance of support agents, both technical and soft skill-wise.</li>
+                    <li>Develop and maintain a new QA dashboard (SQL for queries & Looker for display).</li>
+                    <li>Provide one on one feedback to agents.</li>
+                    <li>Assist in the creation of a new QA rubric.</li>
+                    <li>Develop improvement plans and coaching for underperformers.</li>
+                    <li>Pull and sort metrics for weekly reviews with management.</li>
+                  </ul>
+                </ul>
+
+                <h5 style="font-weight: bold">Technical Solution Representative</h5>
+                <p>March 2021 - December 2021 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <h6>➢ Functions</h6>
+                  <ul>
+                    <li>Resolution of architectural flaws.</li>
+                    <li>Investigation and troubleshooting of real-time incidents.</li>
+                    <li>Issue reproduction.</li>
+                    <li>Improvement and documentation of new and existing procedures.</li>
+                    <li>Training of new hires.</li>
+                  </ul>
+                </ul>
+              </div>
+                
+              <h2 class="w3-border-bottom w3-border-gray" style="border-width: 1px !important;"></h2>
+
+              <div class="w3-container w3-margin-top-2 w3-cursive">
+                <h4 style="font-weight: bold">EY (Ernst & Young)</h4>
+                <h5 style="font-weight: bold">SOC Analyst</h5>
+                <p>July 2019 - March 2020 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <h5>➢ Functions</h5>
+                  <ul>
+                    <li>Incident management.</li>
+                    <li>Resolution of alerts.</li>
+                    <li>Reporting.</li>
+                    <li>Preventive measures.</li>
+                    <li>Customer service.</li>
+                  </ul>
+                </ul>
+              </div>
+
+              <h2 class="w3-border-bottom w3-border-gray" style="border-width: 1px !important;"></h2>
+
+              <div class="w3-container w3-margin-top-2 w3-cursive">
+                <h4 style="font-weight: bold">ESL - Turtle Entertainment GmbH</h4>
+                <h4 style="font-weight: bold">Support Admin</h4>
+                <p>2016 - 2020</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <h5>➢ Functions</h5>
+                  <ul>
+                    <li>Set-up of the gaming stations and peripherals.</li>
+                    <li>Sale of marketing products in the official store and technical/user assistance.</li>
+                    <li>Collaborate with the production, sound and video team.</li>
+                    <li>Design, plan and organise online and offline events.</li>
+                    <li>Community feedback and equipment maintenance.</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">❧ MY EDUCATION</h3>
+                <h4>Master in AAA game development with Unreal Engine 5</h4>
+                <dd>
+                  <h5>iVisual, Escuela de nuevas tecnologias, Valladolid</h5>
+                  <p>2023 - Present </p>
+                </dd>
+                
+                <h4>Software Engineering college diploma</h4>
+                <dd>
+                  <h5>La Salle Ramon Llull, Barcelona</h5>
+                  <p>2014 - 2020 </p>
+                </dd>
+                
+                <h4>Technological High school diploma</h4>
+                <dd>
+                  <h5>Terraferma, Lleida</h5>
+                  <p>2012 - 2014</p>
+                </dd>
+
+                <h4>Overseas exchange program (full academic year)</h4>
+                <dd>
+                  <h5>Sedbergh School, United Kingdom</h5>
+                  <p>2011 - 2012</p>
+                </dd>
+
+                <h4>Overseas exchange program (full semester)</h4>
+                <dd>
+                  <h5>Dublin</h5>
+                  <p>2008 & 2009</p>
+                </dd>
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">❧ MY SKILLS</h3>
+              <!--SOFT SKILLS-->
+              <h4>Soft skills</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>My experience as frontline technical support has honed my soft skills as I'm easily capable of 
+                  communicating with customers and team members alike, setting expectations, generating rapport and sharing
+                  technically complex matters in a simple-to-understand manner.
+                </li>
+                <li>I also developed my troubleshooting and issue investigation/troubleshooting skills in an efficient manner.
+                  This is also linked to my time management capability in respecting SLAs and producing deliverables in due time.
+                </li>
+                <li>Learning and understanding new tools, technologies and technical documentation has also allowed me to 
+                  thrive in the unknown.
+                </li>
+              </ul>
+              <h2 class="w3-border-bottom w3-border-gray" style="border-width: 1px !important;"></h2>
+              <!--TECHNICAL SKILLS-->
+              <h4>Technical skills</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I have varying degrees of knowledge with the following programming languages:</li>
+                    <ul class="columned_ul">
+                      <li>Java</li>
+                      <li>C</li>
+                      <li>C++</li>
+                      <li>Javascript</li>
+                      <li>PHP</li>
+                      <li>MIPS Assembly</li>
+                      <li>SQL</li>
+                      <li>Html</li>
+                      <li>CSS</li>
+                      <li>Dart</li>
+                      <li>Bash</li>
+                      <li>Python</li>
+                    </ul>
+                  <li>From the aforementioned list, the languages I feel the most comfortable with and have the most knowledge
+                    of are Java, C and C++.
+                  </li>
+                  <li>I have also worked with a number of IDEs, editors and environments such as:</li>
+                    <ul class="columned_ul">
+                      <li>Android Studio</li>
+                      <li>IntelliJ</li>
+                      <li>Rider</li>
+                      <li>Unreal Engine 5</li>
+                      <li>Sublime text</li>
+                      <li>MPLab</li>
+                      <li>Putty</li>
+                      <li>pgAdmin</li>
+                      <li>VMWare</li>
+                      <li>PHP Studio</li>
+                      <li>Visual Studio</li>
+                      <li>IC-Prog</li>
+                      <li>WINCUPL</li>
+                      <li>XAMPP</li>
+                    </ul>
+
+                </ul>
+            </div>
+
+            <!---CERTIFICATES SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">❧ MY CERTIFICATES</h3>
+              <li>Associate Cloud Engineer (ACE certificate)</li>
+              <li>Cisco CCNA-1, Part 1</li>
+              <li>English C1 Advanced exam (CAE)</li>
+              <li>German A2</li>
+            </div>
+
+            <!---LANGUAGES SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">❧ LANGUAGES</h3>
+              <li>Spanish - Native</li>
+              <li>Catalan - Native</li>
+              <li>English - Advanced</li>
+              <li>German - Basic</li>
+              <li>Basque - Basic</li>
+            </div>
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">❧ MY HOBBIES AND INTERESTS</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I love playing videogames in my free time. I'm a very competitive player and my favourite genres 
+                    are shooters and strategy games, although I play all sorts of genres.
+                  </li>
+                  <li>I also enjoy reading, and I'm particularly proud of my small library. My preferred genres are historical 
+                    novels and fantasy novels.
+                  </li>
+                  <li>I very sparingly go climbing too.</li>
+                </ul>
+            </div>
+
+            <!--REFERENCE SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">❧ MY REFERENCES</h3>
+              <h4>Stefan Ghinea, Operations Manager at Webhelp</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <a href="https://www.linkedin.com/in/stefan-ghinea/">LinkedIn</a>
+              </ul>
+              <h4>Christian Berndtsson, Team Manager at Webhelp</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <p>Phone number: <a href="tel:+34651098506">+34 651 09 85 06</a></p>
+                <p>E-mail: <a href="mailto:jcberndtsson@gmail.com">jcberndtsson@gmail.com</a></p>
+              </ul>
+            </div>            
+          </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACT</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Name: Angel Farre Echaburua</p>
+              <p>Address: Carrer de Calabria 232, 08029, Barcelona, Spain</p>
+              <p>Phone number: <a href="tel:+34674228274">+34 674 22 82 74</a></p>
+              <p>E-mail: <a href="mailto:angel.farre.echaburua@gmail.com">angel.farre.echaburua@gmail.com</a></p>
+            </div>
+          </div>
+
+          <p class="w3-container w3-padding-16">
+          <a href="./Angel_Farre_cv.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="Angel_Farre_cv.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </p>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2023 - Angel Farre Echaburua</p>
+           <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
+
