@@ -208,3 +208,55 @@ div {
     width: 100%;
     height: 100%;
 }
+
+.scrollable{
+  overflow-y: auto;
+}
+
+/*
+.scrollable{
+  width: 20%; 
+  position:absolute;
+  right:0;
+  top:0;
+}
+*/
+
+.centre{
+   float:center;
+}
+
+.left{
+  float:left;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.bottom-pin {
+  margin-top: auto;
+  color: white;
+}
+
+.main-buttons {
+  display: flex;
+}
+
+.main-buttons button {
+  flex-grow: 1; /* Make both buttons take up equal space */
+  padding: 10px; /* Set padding around the text */
+  text-align: center; /* Center the text horizontally */
+  min-width: 0; /* Allow the button to shrink if needed */
+  overflow: hidden; /* Prevent text from overflowing */
+  white-space: normal; /* Prevent text from wrapping */
+  font-size : 17px;
+}
