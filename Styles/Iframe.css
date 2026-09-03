@@ -1,4 +1,6 @@
- .iframe-container {
+/* YouTube video elements */
+
+.iframe-container {
   position: relative;
   overflow: hidden;
   width: 100%;
