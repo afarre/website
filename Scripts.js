@@ -1,17 +1,3 @@
-function myFunction(imgs) {
-    // Get the expanded image
-    var expandImg = document.getElementById("expandedImg");
-    // Get the image text
-    var imgText = document.getElementById("imgtext");
-    // Use the same src in the expanded image as the image being clicked on from the grid
-    expandImg.src = imgs.src;
-    // Use the value of the alt attribute of the clickable image as text inside the expanded image
-    imgText.innerHTML = imgs.alt;
-    // Show the container element (hidden with CSS)
-    expandImg.parentElement.style.display = "block";
-}
-
-
 function Project1TabbedFunc(imgs) {
     // Get the expanded image
     var expandImg = document.getElementById("expandedImg1");
@@ -64,19 +50,6 @@ function Project4TabbedFunc(imgs) {
     expandImg.parentElement.style.display = "block";
 }
 
-function Project5TabbedFunc(imgs) {
-    // Get the expanded image
-    var expandImg = document.getElementById("expandedImg5");
-    // Get the image text
-    var imgText = document.getElementById("imgtext5");
-    // Use the same src in the expanded image as the image being clicked on from the grid
-    expandImg.src = imgs.src;
-    // Use the value of the alt attribute of the clickable image as text inside the expanded image
-    imgText.innerHTML = imgs.alt;
-    // Show the container element (hidden with CSS)
-    expandImg.parentElement.style.display = "block";
-}
-
 function Project6TabbedFunc(imgs) {
     // Get the expanded image
     var expandImg = document.getElementById("expandedImg6");
@@ -103,45 +76,11 @@ function Project7TabbedFunc(imgs) {
     expandImg.parentElement.style.display = "block";
 }
 
-function Project8TabbedFunc(imgs) {
-    // Get the expanded image
-    var expandImg = document.getElementById("expandedImg8");
-    // Get the image text
-    var imgText = document.getElementById("imgtext8");
-    // Use the same src in the expanded image as the image being clicked on from the grid
-    expandImg.src = imgs.src;
-    // Use the value of the alt attribute of the clickable image as text inside the expanded image
-    imgText.innerHTML = imgs.alt;
-    // Show the container element (hidden with CSS)
-    expandImg.parentElement.style.display = "block";
+// Script to expand/collide the project's sidebar sections
+function ToggleExpandOrCollapse() {
+    const element = document.getElementById("myCollapse");
+
+    if (!element) return;
+
+    element.classList.toggle("w3-hide");
 }
-
-function Project9TabbedFunc(imgs) {
-    // Get the expanded image
-    var expandImg = document.getElementById("expandedImg9");
-    // Get the image text
-    var imgText = document.getElementById("imgtext9");
-    // Use the same src in the expanded image as the image being clicked on from the grid
-    expandImg.src = imgs.src;
-    // Use the value of the alt attribute of the clickable image as text inside the expanded image
-    imgText.innerHTML = imgs.alt;
-    // Show the container element (hidden with CSS)
-    expandImg.parentElement.style.display = "block";
-}
-
-$.fn.linkRow = function(element) {
-    thisRow = this.find('tbody tr');
-
-    thisRow.not('a').on('mouseup', function(e) {
-        hrefLocation = $(this).find('td.link:first a:first').attr('href');
-        if ( hrefLocation ) {
-           if (e.which == 2) { 
-              window.open(hrefLocation);
-           }
-           else{
-              window.location.href = hrefLocation;
-           }
-        };
-    }).addClass( ( thisRow.has('td.link') ) ? 'pointer' : '' );
-    return this;
-};
