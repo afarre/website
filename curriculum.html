@@ -4,15 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Curriculum Vitae</title>
-        <link rel="icon" type="image/x-icon" href="man.png">
+        <link rel="icon" type="image/x-icon" href="Assets/man.png">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!--Montserrat font-->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="stylesheet" href="TabbedGalleryStyles.css"/>
-        <link rel="stylesheet" href="CarouselStyles.css"/>
+        <link rel="stylesheet" href="Styles/General.css"/>
         <script src="Scripts.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
@@ -32,7 +30,7 @@
         <section class="image-section w3-quarter w3-fixed w3-padding-small scrollable">
             <!--IMAGE/AVATAR-->
             <div style="text-align: center;">
-                 <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+                 <img src="Assets/avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
             </div>
             
                 <!--SOCIAL NETWORK BUTTONS-->
@@ -46,9 +44,11 @@
                     <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/angel-farre/" target="_blank">
                         <i data-feather="linkedin"></i>
                     </a>
+                    <!--
                     <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.artstation.com/angel_fe" target="_blank">
                         <i class="fa-brands fa-artstation fa-xl"></i>
-                    </a>
+                    </a> 
+                    -->
                 </div>
                 <!--CV DOWNLOAD BUTTON-->
                 <p class="w3-container w3-padding-16">
@@ -90,35 +90,58 @@
                 
                 <!--EMPLOYMENT HISTORY SECTION-->
                 <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">❧ EMPLOYMENT HISTORY</h3>
-                
+
+                <div class="w3-container w3-margin-top-2 w3-cursive">
+                    <h4 style="font-weight: bold">GRIP Studios</h4>
+                    <h5 style="font-weight: bold">UI Tech Lead</h5>
+                    <a href="https://store.steampowered.com/app/2502780/Rangers_Path_National_Park_Simulator/">
+                        <h6 style="font-weight: bold">Ranger’s Path: National Park Simulator</h6>
+                    </a>
+
+                    <p>March 2025 - Present</p>
+                        <h6>➢ Functions</h6>
+                        <ul>
+                            <li>Oversee and manage a team of 2 developers.</li>
+                            <li>Synchronise with Production, Art, Audio and Gameplay to clarify requirements and smooth transition of shared features.</li>
+                            <li>Write and review submissions to ensure a high standard of code quality.</li>
+                        </ul>
+                        
+                        <h6>➢ Achievements</h6>
+                        <ul>
+                            <li>Delivered all milestones in a timely manner, with no major issues and a very robust, crash-free code.</li>
+                            <li>Expanded on the in-house map plugin to add features such as icon overlap management, limit collision handling, off-screen icon pointers, etc.</li>
+                            <li>Console debugging, including researching the means to compile directly from the Rider IDE into the PS5, shortening debugging time.</li>
+                        </ul>   
+
+                    <h5 style="font-weight: bold">UI Developer</h5>
+                    <h6 style="font-weight: bold">Police Simulator</h6>
+                    
+                    <p>June 2024 - March 2025 </p>
+                        <h6>➢ Functions</h6>
+                        <ul>
+                            <li>Implement widgets to UX/UI’s specifications.</li>
+                            <li>Create necessary materials and animations for the UI.</li>
+                            <li>Write clean, scalable and performant code as a solid base for additional features.</li>
+                        </ul>
+
+                        <h6>➢ Achievements</h6>
+                        <ul>
+                            <li>Delivered and passed the Vertical Slice milestone.</li>
+                            <li>Implemented the base plugin for a map with features such as panning, zoom and dynamic icon placement.</li>
+                        </ul>   
+                </div>
+                    
+                <h2 class="w3-border-bottom w3-border-gray" style="border-width: 1px !important;"></h2>
+
                 <div class="w3-container w3-margin-top-2 w3-cursive">
                     <h4 style="font-weight: bold">Webhelp</h4>
                     <h5 style="font-weight: bold">Quality Assurance</h5>
                     <p>December 2021 - September 2023</p>
-                    <ul class="w3-ul" style="font-weight: 500;">  
-                        <h6>➢ Functions</h6>
-                        <ul>
-                            <li>Analyse and qualify the technical performance of support agents, both technical and soft skill-wise.</li>
-                            <li>Develop and maintain a new QA dashboard (SQL for queries & Looker for display).</li>
-                            <li>Provide one on one feedback to agents.</li>
-                            <li>Assist in the creation of a new QA rubric.</li>
-                            <li>Develop improvement plans and coaching for underperformers.</li>
-                            <li>Pull and sort metrics for weekly reviews with management.</li>
-                        </ul>
-                    </ul>
+                    <p>One on one feedback meetings with agents, weekly management metrics reviews, develop and maintain an SQL/Looker dashboard and miscellaneous tasks.</p>
 
                     <h5 style="font-weight: bold">Technical Solution Representative</h5>
                     <p>March 2021 - December 2021 </p>
-                    <ul class="w3-ul" style="font-weight: 500;">
-                        <h6>➢ Functions</h6>
-                        <ul>
-                            <li>Resolution of architectural flaws.</li>
-                            <li>Investigation and troubleshooting of real-time incidents.</li>
-                            <li>Issue reproduction.</li>
-                            <li>Improvement and documentation of new and existing procedures.</li>
-                            <li>Training of new hires.</li>
-                        </ul>
-                    </ul>
+                    <p>Investigate, reproduce and troubleshoot issues, resolve architectural flaws, expand and improve documentation and training of new hires.</p>
                 </div>
                     
                 <h2 class="w3-border-bottom w3-border-gray" style="border-width: 1px !important;"></h2>
@@ -127,16 +150,7 @@
                     <h4 style="font-weight: bold">EY (Ernst & Young)</h4>
                     <h5 style="font-weight: bold">SOC Analyst</h5>
                     <p>July 2019 - March 2020 </p>
-                    <ul class="w3-ul" style="font-weight: 500;">
-                        <h5>➢ Functions</h5>
-                        <ul>
-                            <li>Incident management.</li>
-                            <li>Resolution of alerts.</li>
-                            <li>Reporting.</li>
-                            <li>Preventive measures.</li>
-                            <li>Customer service.</li>
-                        </ul>
-                    </ul>
+                    <p>Peripheral security monitoring, incident management, preventive measures, reporting and customer service.</p>
                 </div>
 
                 <h2 class="w3-border-bottom w3-border-gray" style="border-width: 1px !important;"></h2>
@@ -145,16 +159,9 @@
                     <h4 style="font-weight: bold">ESL - Turtle Entertainment GmbH</h4>
                     <h4 style="font-weight: bold">Support Admin</h4>
                     <p>2016 - 2020</p>
-                    <ul class="w3-ul" style="font-weight: 500;">
-                        <h5>➢ Functions</h5>
-                        <ul>
-                            <li>Set-up of the gaming stations and peripherals.</li>
-                            <li>Sale of marketing products in the official store and technical/user assistance.</li>
-                            <li>Collaborate with the production, sound and video team.</li>
-                            <li>Design, plan and organise online and offline events.</li>
-                            <li>Community feedback and equipment maintenance.</li>
-                        </ul>
-                    </ul>
+                    <p>Support administrator for major E-Sports competitions and standalone admin for monthly local competitions.
+                        Setting up the game stations, handling players and attendees, gather and resolve feedback.
+                    </p>
                 </div>
             </div>
 
@@ -198,9 +205,9 @@
                 <!--SOFT SKILLS-->
                 <h4>Soft skills</h4>
                 <ul class="w3-ul" style="font-weight: 500;">
-                    <li>My experience as frontline technical support has honed my soft skills as I'm easily capable of 
-                    communicating with customers and team members alike, setting expectations, generating rapport and sharing
-                    technically complex matters in a simple-to-understand manner.
+                    <li>Over time, my experience as a tech lead, QA and frontline technical support has honed my soft skills resulting in
+                        easily being capable of communicating with customers and team members alike, setting expectations, generating rapport 
+                        and sharing technically complex matters in a simple-to-understand manner.
                     </li>
                     <li>I also developed my troubleshooting and issue investigation/troubleshooting skills in an efficient manner.
                     This is also linked to my time management capability in respecting SLAs and producing deliverables in due time.
@@ -280,11 +287,12 @@
                     <li>I also enjoy reading, and I'm particularly proud of my small library. My preferred genres are historical 
                         novels and fantasy novels.
                     </li>
-                    <li>I very sparingly go climbing too.</li>
+                    <li>I very sparingly go climbing too and up until recently I practiced Olympic shooting.</li>
                 </ul>
             </div>
 
             <!--REFERENCE SECTION-->
+            <!--
             <div class="w3-container w3-margin-top-2 w3-cursive">
                 <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">❧ REFERENCES</h3>
                 <h4>Stefan Ghinea, Operations Manager at Webhelp</h4>
@@ -297,6 +305,7 @@
                     <p>E-mail: <a href="mailto:jcberndtsson@gmail.com">jcberndtsson@gmail.com</a></p>
                 </ul>
             </div>
+            -->
 
             <button class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" onclick="topFunction()" id="myBtn" title="Go to top">
                 <i data-feather="arrow-up" style="vertical-align: -0.35em;"></i>
