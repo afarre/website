@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Projects</title>
     <link rel="icon" type="image/x-icon" href="Assets/man.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -11,631 +11,675 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--Montserrat font-->
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="Styles/TabbedGallery.css" />
-    <link rel="stylesheet" href="Styles/General.css" />
-    <link rel="stylesheet" href="Styles/Iframe.css" />
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="Styles/TabbedGallery.css"/>
+    <link rel="stylesheet" href="Styles/General.css"/>
+    <link rel="stylesheet" href="Styles/Iframe.css"/>
     <script src="Scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
 </head>
 
 <body>
-    <section>
-        <!-- MOBILE NAVIGATION -->
-        <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
-            <a class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" href="./">
+<section>
+    <!-- MOBILE NAVIGATION -->
+    <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" href="./">
+            <i data-feather="arrow-left" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">BACK</span>
+        </a>
+        <p class="w3-bar-item w3-right" style="padding-right: 5%; border-width: 2px !important">Angel Farre
+            Echaburua</p>
+    </div>
+
+    <!-- SIDEBAR MENU -->
+    <section class="image-section w3-quarter w3-fixed w3-padding-small scrollable">
+
+        <!-- IMAGE/AVATAR -->
+        <img src="Assets/avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"
+             alt="avatar.png"/>
+
+        <!--SOCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+            <a class="icon-link w3-text-sand w3-hover-text-amber"
+               href="https://stackoverflow.com/users/7060082/afarre" target="_blank">
+                <i class="fa-brands fa-stack-overflow fa-2xl"></i>
+            </a>
+            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/afarre" target="_blank">
+                <i data-feather="github"></i>
+            </a>
+            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/angel-farre/"
+               target="_blank">
+                <i data-feather="linkedin"></i>
+            </a>
+            <!--
+                <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.artstation.com/angel_fe" target="_blank">
+                    <i class="fa-brands fa-artstation fa-xl"></i>
+                </a>
+                -->
+        </div>
+
+        <!-- INDEX -->
+        <div class="w3-bar-block" style="text-align: center;">
+            <!--<h1 class="w3-text-amber w3-padding-32" style="font-size:2vw; text-align: center;">PORTFOLIO</h1>-->
+
+            <!-- Expandable buttons
+            <button type="button" onclick="ToggleExpandOrCollapse()">
+                Open Collapsible
+            </button>
+
+            <div id="myCollapse" class="w3-hide">
+            </div>
+            -->
+            <p class="w3-container">
+                <a href="#Project9"
+                   class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
+                   onclick="toggleNavigation()">
+                    <span class="left">Project 9 </span><span class="centre"><b>Nagy</b></span>
+                </a>
+            </p>
+            <p class="w3-container">
+                <a href="#Project8"
+                   class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
+                   onclick="toggleNavigation()">
+                    <span class="left">Project 8 </span><span class="centre"><b>Tile selector</b></span>
+                </a>
+            </p>
+            <p class="w3-container">
+                <a href="#Project7"
+                   class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
+                   onclick="toggleNavigation()">
+                    <span class="left">Project 7 </span><span class="centre"><b>Castle Environment</b></span>
+                </a>
+            </p>
+            <p class="w3-container">
+                <a href="#Project6"
+                   class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
+                   onclick="toggleNavigation()">
+                    <span class="left">Project 6 </span><span class="centre"><b>Animal Crossing</b></span>
+                </a>
+            </p>
+            <p class="w3-container">
+                <a href="#Project5"
+                   class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
+                   onclick="toggleNavigation()">
+                    <span class="left">Project 5 </span><span class="centre"><b>Sequencer</b></span>
+                </a>
+            </p>
+            <p class="w3-container">
+                <a href="#Project4"
+                   class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
+                   onclick="toggleNavigation()">
+                    <span class="left">Project 4 </span><span class="centre"><b>Window</b></span>
+                </a>
+            </p>
+            <p class="w3-container">
+                <a href="#Project3"
+                   class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
+                   onclick="toggleNavigation()">
+                    <span class="left">Project 3 </span><span class="centre"><b>Nanite Environment</b></span>
+                </a>
+            </p>
+            <p class="w3-container">
+                <a href="#Project2"
+                   class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
+                   onclick="toggleNavigation()">
+                    <span class="left">Project 2 </span><span class="centre"><b>Wasteland</b></span>
+                </a>
+            </p>
+            <p class="w3-container">
+                <a href="#Project1"
+                   class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
+                   onclick="toggleNavigation()">
+                    <span class="left">Project 1 </span><span class="centre"><b>Flat Renovation</b></span>
+                </a>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- MAIN BODY -->
+    <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION (header )-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+            <a class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large"
+               href="./">
                 <i data-feather="arrow-left" style="vertical-align: -0.35em;"></i>
                 <span class="w3-margin-left download-text">BACK</span>
             </a>
-            <p class="w3-bar-item w3-right" style="padding-right: 5%; border-width: 2px !important">Angel Farre
-                Echaburua</p>
+            <p class="w3-bar-item w3-right w3-hide-small" style="border-width: 2px !important">Angel Farre Echaburua
+            </p>
         </div>
+        <div class="content-container w3-margin-top-2">
+            <!--RESUME-->
+            <div class="w3-container w3-margin-top-2 w3-cursive w3-large">
+                <div class="w3-container w3-padding-32">
+                    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">PROJECTS</h2>
+                </div>
+                <p>Here you can find more about my personal projects. Some are artistic in nature as they focus on
+                    environment or sequencer, others are
+                    C++ focused projects. While my early projects are far from perfect and have many flaws, they
+                    helped me learn in depth how to work in
+                    Unreal Engine. Each project helped me become knowledgeable in one or more topics, making me
+                    capable today of developing rich environments
+                    supported by a reusable and modular programming allowing for a quick growth in game content.
+                </p>
+                <div class="w3-container w3-margin-top-2 w3-cursive">
 
-        <!-- SIDEBAR MENU -->
-        <section class="image-section w3-quarter w3-fixed w3-padding-small scrollable">
+                    <!-- Projects tabbed image gallery -->
+                    <div class="w3-row-padding">
+                        <a href="#Project9">
+                            <div class="w3-col l4 m6 w3-margin-bottom">
+                                <div class="w3-display-container" style="width:95%">
+                                    <img class="index-tabbed-gallery"
+                                         src="https://drive.google.com/thumbnail?id=1JqB87koFnRwPQc0X8lOkN1R9-jjjLTYg&sz=w4000"
+                                         alt="House" style="width:100%">
 
-            <!-- IMAGE/AVATAR -->
-            <img src="Assets/avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+                                    <div class="w3-display-topleft w3-amber gallery-text">Nagy</div>
+                                </div>
+                            </div>
+                        </a>
 
-            <!--SOCIAL NETWORK BUTTONS-->
-            <div class="links w3-margin-top w3-padding-small">
-                <a class="icon-link w3-text-sand w3-hover-text-amber"
-                    href="https://stackoverflow.com/users/7060082/afarre" target="_blank">
-                    <i class="fa-brands fa-stack-overflow fa-2xl"></i>
-                </a>
-                <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/afarre" target="_blank">
-                    <i data-feather="github"></i>
-                </a>
-                <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/angel-farre/"
-                    target="_blank">
-                    <i data-feather="linkedin"></i>
-                </a>
-                <!--
-                    <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.artstation.com/angel_fe" target="_blank">
-                        <i class="fa-brands fa-artstation fa-xl"></i>
-                    </a> 
-                    -->
-            </div>
+                        <a href="#Project8">
+                            <div class="w3-col l4 m6 w3-margin-bottom">
+                                <div class="w3-display-container" style="width:95%">
+                                    <img class="index-tabbed-gallery"
+                                         src="https://drive.google.com/thumbnail?id=1r6ONgzgqZi138RIKrfcA3e88M7IPyiwC&sz=w4000"
+                                         alt="House" style="width:100%">
 
-            <!-- INDEX -->
-            <div class="w3-bar-block" style="text-align: center;">
-                <!--<h1 class="w3-text-amber w3-padding-32" style="font-size:2vw; text-align: center;">PORTFOLIO</h1>-->
+                                    <div class="w3-display-topleft w3-amber gallery-text">Tile selector</div>
+                                </div>
+                            </div>
+                        </a>
 
-                <!-- Expandable buttons
-                <button type="button" onclick="ToggleExpandOrCollapse()">
-                    Open Collapsible
+                        <a href="#Project7">
+                            <div class="w3-col l4 m6 w3-margin-bottom">
+                                <div class="w3-display-container" style="width:95%">
+                                    <img class="index-tabbed-gallery"
+                                         src="https://drive.google.com/thumbnail?id=1Pn6m0ofGTpHn7NURSw_SFsy-2XiCNELN&sz=w4000"
+                                         alt="House" style="width:100%">
+
+                                    <div class="w3-display-topleft w3-amber gallery-text">Castle Environment</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#Project6">
+                            <div class="w3-col l4 m6 w3-margin-bottom">
+                                <div class="w3-display-container" style="width:95%">
+                                    <img class="index-tabbed-gallery"
+                                         src="https://drive.google.com/thumbnail?id=10mHgsUVRs_AqlFXI5HcnOd0gLXqLIr6Y&sz=w4000"
+                                         alt="House" style="width:100%">
+
+                                    <div class="w3-display-topleft w3-amber gallery-text">Animal Crossing</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#Project5">
+                            <div class="w3-col l4 m6 w3-margin-bottom">
+                                <div class="w3-display-container" style="width:95%">
+                                    <img class="index-tabbed-gallery"
+                                         src="https://drive.google.com/thumbnail?id=1JZLip3ys5rs1iFfQF4khkK-7s4bCcG4M&sz=w4000"
+                                         alt="House" style="width:100%">
+
+                                    <div class="w3-display-topleft w3-amber gallery-text">Sequencer</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#Project4">
+                            <div class="w3-col l4 m6 w3-margin-bottom">
+                                <div class="w3-display-container" style="width:95%">
+                                    <img class="index-tabbed-gallery"
+                                         src="https://drive.google.com/thumbnail?id=1QrYM4LcZUU-n7rGP9FkL-ZAKH0KoR5QW&sz=w4000"
+                                         alt="House" style="width:100%">
+
+                                    <div class="w3-display-topleft w3-amber gallery-text">Window</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#Project3">
+                            <div class="w3-col l4 m6 w3-margin-bottom">
+                                <div class="w3-display-container" style="width:95%">
+                                    <img class="index-tabbed-gallery"
+                                         src="https://drive.google.com/thumbnail?id=1J8EtG3X1jt0-3O0dPiCBtx7n9sTK10QJ&sz=w4000"
+                                         alt="House" style="width:100%">
+
+                                    <div class="w3-display-topleft w3-amber gallery-text">Nanite Environment</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#Project2">
+                            <div class="w3-col l4 m6 w3-margin-bottom">
+                                <div class="w3-display-container" style="width:95%">
+                                    <img class="index-tabbed-gallery"
+                                         src="https://drive.google.com/thumbnail?id=1aMYvNG7wtVqZ1tfms4UbytVlXhZAJFKx&sz=w4000"
+                                         alt="House" style="width:100%">
+
+                                    <div class="w3-display-topleft w3-amber gallery-text">Wasteland</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#Project1">
+                            <div class="w3-col l4 m6 w3-margin-bottom">
+                                <div class="w3-display-container" style="width:95%">
+                                    <img class="index-tabbed-gallery"
+                                         src="https://drive.google.com/thumbnail?id=1R-U9Pm4PxHgCh6-e7CnSfHSpJq13sTod&sz=w4000"
+                                         alt="Flat" style="width:100%">
+
+                                    <div class="w3-display-topleft w3-amber gallery-text">Flat Renovation</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--PROJECT 9-->
+                    <div id="Project9" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                        <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 9
+                            - Nagy</h2>
+
+                        <p>Work in progress. Reusing the <a href="#Project5">Sequencer</a> map I created this
+                            project to focus in C++ much like my previous tile project, but this time focused on
+                            a more "gamified" set of features.
+                            Whilst the previous project was great at showcasing C++ excellence in an Unreal
+                            environment, it had little in terms of gameplay and the AI, interactions, damage
+                            handling and other features that come with it. This project
+                            aims to fix that and also adds Data Tables, Data Assets and pure C++ UI to my
+                            knowledge pool.</p>
+                        <p><br>At its present state, the player is capable of picking a primary and a secondary weapon
+                            and can cast 2 spells. Enemies have a basic follow AI and
+                            a damage system. Melee weapon damage collision has been done with traces. A strong emphasis
+                            has been placed in code reusability and abstraction.<br>Code available on its public
+                            <a href="https://github.com/afarre/UE5_Nagy">GitHub repository</a>.
+                        </p>
+
+                        <!-- Video -->
+                        <div class="iframe-container">
+                            <iframe class="responsive-iframe"
+                                    src="https://www.youtube.com/embed/27zpCdApqXo"></iframe>
+                        </div>
+                    </div>
+
+                    <!--PROJECT 8-->
+                    <div id="Project8" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                        <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 8
+                            - Tile Selector</h2>
+
+                        <p>This Dynamic Tile selector project allowed me to gain sound programming knowledge
+                            with Unreal. This C++ focused project is capable of detecting when the user adds
+                            images to a predefined folder, and then it converts the images to
+                            textures that can be used in game live. The textures are then used to change the
+                            material of the bathroom walls. This project also allows you to take screenshots,
+                            save and load and navigate to/edit the folders used to drop images and to
+                            store the screenshots taken by the user, all inside of Unreal. <br>Additional GIFs and code
+                            available on its public
+                            <a href="https://github.com/afarre/UE5_DynamicTileSelector">GitHub repository</a>.
+                        </p>
+
+                        <!-- Video -->
+                        <div class="iframe-container">
+                            <iframe class="responsive-iframe"
+                                    src="https://www.youtube.com/embed/36dZkRyt4uU"></iframe>
+                        </div>
+                    </div>
+
+                    <!--PROJECT 7-->
+                    <div id="Project7" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                        <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 7
+                            - Castle Environment</h2>
+
+                        <p>This project contains a compilation of all the knowledge I had acquired up to this
+                            point. Besides the aforementioned topics learned, I also introduced world and local
+                            aligned textures and pixel dithering to aid me blend the different meshes
+                            that compose the environment. I also introduced some localised VFX particles. <br>I also
+                            expanded on my programming as not only can you interact with elements, but there are
+                            damageable enemies and objects that damage the player. While the enemies
+                            lack AI, I did implement some AI for the deer scattered around the world. I also added UI
+                            elements such as health bars and a menu. I dropped this project some time later as I had
+                            learned much with it, but my code was far from clean, and
+                            I deemed it more worth to begin a new project with the good practices and knowledge I had
+                            acquired while working on this one.
+                        </p>
+
+                        <!-- Expandable image -->
+                        <div>
+                            <div style="text-align:center">
+                                <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1Pn6m0ofGTpHn7NURSw_SFsy-2XiCNELN&sz=w4000"
+                                         alt="Overview" style="width:100%" onclick="Project7TabbedFunc(this);">
+                                </div>
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1EugY9gCYQtkkJ7Jvu8IdVIpH-KvWjtAj&sz=w4000"
+                                         alt="UI and localised forest lighting" style="width:100%"
+                                         onclick="Project7TabbedFunc(this);">
+                                </div>
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1YElRZM-agfuysWRP0PByRZTKxcrSQG-F&sz=w4000"
+                                         alt="Pause menu" style="width:100%" onclick="Project7TabbedFunc(this);">
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="container">
+                                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                <img id="expandedImg7" style="width:100%" alt="expandedImage">
+                                <div id="imgtext7"></div>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="iframe-container">
+                            <iframe class="responsive-iframe"
+                                    src="https://www.youtube.com/embed/iVxCx8DT3CQ"></iframe>
+                        </div>
+                    </div>
+
+                    <!--PROJECT 6-->
+                    <div id="Project6" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                        <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 6
+                            - Low Poly Animal Crossing</h2>
+
+                        <p>In this third assignment of my Masters, we had the task to create any environment we
+                            desired with the only restriction being that it had to be with low poly assets.
+                            Besides the creation of the environment per se, which was a diorama of an
+                            Animal Crossing inspired island, I also utilised splines in order to help me add the
+                            roads and lamps to the map.
+                        </p>
+
+                        <!-- Expandable image -->
+                        <div>
+                            <div style="text-align:center">
+                                <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=10mHgsUVRs_AqlFXI5HcnOd0gLXqLIr6Y&sz=w4000"
+                                         alt="Closeup" style="width:100%" onclick="Project6TabbedFunc(this);">
+                                </div>
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1UBOE0Pw-Kkz8W2yMmhAHL4zcOoAQpygV&sz=w4000"
+                                         alt="Overview" style="width:100%" onclick="Project6TabbedFunc(this);">
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="container">
+                                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                <img id="expandedImg6" style="width:100%" alt="expandedImage">
+                                <div id="imgtext6"></div>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="iframe-container">
+                            <iframe class="responsive-iframe"
+                                    src="https://www.youtube.com/embed/s8vI1Wcrokk"></iframe>
+                        </div>
+                    </div>
+
+                    <!--PROJECT 5-->
+                    <div id="Project5" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                        <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 5
+                            - Sequencer</h2>
+
+                        <p>As a second assignment of the Masters, we were to create a Sequence trailer of any
+                            topic of our preference. I organically came upon this arena design in which a
+                            champion faces against some sort of boss. Whilst the assets, soundtracks
+                            and other raw elements are borrowed from free sources such as Sketchfab, the entire
+                            composition, camera layout, lighting and so on are entirely of my own doing.
+                        </p>
+
+                        <!-- Video -->
+                        <div class="iframe-container">
+                            <iframe class="responsive-iframe"
+                                    src="https://www.youtube.com/embed/Pa-hbj_moos"></iframe>
+                        </div>
+                    </div>
+
+                    <!--PROJECT 4-->
+                    <div id="Project4" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                        <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 4
+                            - Window</h2>
+
+                        <p>This small project was an early assignment of my Master's degree in which we had to
+                            replicate the reference image provided.
+                            During the course of an evening, I delivered the seen result. While the general
+                            distribution and lighting was pretty similar, I took some artistic liberty and
+                            changed the background to fit with the free assets I used from the Megascans
+                            library.</p>
+
+                        <!-- Expandable image -->
+                        <div>
+                            <div style="text-align:center">
+                                <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1QrYM4LcZUU-n7rGP9FkL-ZAKH0KoR5QW&sz=w4000"
+                                         alt="Result" style="width:100%" onclick="Project4TabbedFunc(this);">
+                                </div>
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1Iy0eFNiiwNYCz8lmFqgf022jbVWxm3ro&sz=w4000"
+                                         alt="Reference" style="width:100%" onclick="Project4TabbedFunc(this);">
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="container">
+                                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                <img id="expandedImg4" style="width:100%" alt="expandedImage">
+                                <div id="imgtext4"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--PROJECT 3-->
+                    <div id="Project3" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                        <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 3
+                            - Nanite Environment</h2>
+
+                        <p>Inspired by <a
+                                href="https://docs.unrealengine.com/5.0/en-US/valley-of-the-ancient-sample-game-for-unreal-engine/">Valley
+                            of the Ancient</a> and the developer's explanation on how Nanite was utilised to
+                            create the entire scene,
+                            I decided to try something similar. I also took my first steps in programming as
+                            there were some interactive elements scattered around. I also started learning a bit
+                            on optimisation as well as the information that different view modes
+                            Unreal offers. I also touched slightly the camera's parameters such as focus, aperture,
+                            lighting, etc.</p>
+
+                        <!-- Expandable image -->
+                        <div>
+                            <div style="text-align:center">
+                                <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1J8EtG3X1jt0-3O0dPiCBtx7n9sTK10QJ&sz=w4000"
+                                         alt="Camera and lighting test 1" style="width:100%"
+                                         onclick="Project3TabbedFunc(this);">
+                                </div>
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1jY0b4nh_GP8w1qRdnk3KE9_03iwMrvRS&sz=w4000"
+                                         alt="Camera and lighting test 2" style="width:100%"
+                                         onclick="Project3TabbedFunc(this);">
+                                </div>
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1dwbMYR1RnyAA4nbj_K86fy9VCSwAso_R&sz=w4000"
+                                         alt="Camera and lighting test 3" style="width:100%"
+                                         onclick="Project3TabbedFunc(this);">
+                                </div>
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=19abmitOb3XplwM9ky_jywYYKcB0nL3N0&sz=w4000"
+                                         alt="Interactive elements" style="width:100%"
+                                         onclick="Project3TabbedFunc(this);">
+                                </div>
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1WqTK1qNIfvsUzCtx-0WB24wrmDQ9xWQV&sz=w4000"
+                                         alt="Overview" style="width:100%" onclick="Project3TabbedFunc(this);">
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="container">
+                                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                <img id="expandedImg3" style="width:100%" alt="expandedImage">
+                                <div id="imgtext3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--PROJECT 2-->
+                    <div id="Project2" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                        <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 2
+                            - Wasteland</h2>
+
+                        <p>A first attempt at an open world. While far from decent, it game me good knowledge on the
+                            terrain modelling and foliage tools.
+                            I also expanded on materials with texture tiling and similar adjustments. The
+                            inspiration for this quick scene came from
+                            Fallout 4's glowing see (although without the excessive green tone).
+                        </p>
+
+                        <!-- Expandable image -->
+                        <div>
+                            <div style="text-align:center">
+                                <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1aMYvNG7wtVqZ1tfms4UbytVlXhZAJFKx&sz=w4000"
+                                         alt="Shot 1" style="width:100%" onclick="Project2TabbedFunc(this);">
+                                </div>
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=11RuSq-gp_pBo04CC_R_ofrkVEuaSVXsy&sz=w4000"
+                                         alt="Shot 2" style="width:100%" onclick="Project2TabbedFunc(this);">
+                                </div>
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1OEXzLfEWgDBTY0zVbk-h2UhAj08zuxay&sz=w4000"
+                                         alt="Reference 1 - Fallout 4 glowing sea" style="width:100%"
+                                         onclick="Project2TabbedFunc(this);">
+                                </div>
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1tIc3pVGqYlZNWAuhMr6s0PYKWz-HtaPh&sz=w4000"
+                                         alt="Reference 2 - Fallout 4 glowing sea" style="width:100%"
+                                         onclick="Project2TabbedFunc(this);">
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="container">
+                                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                <img id="expandedImg2" style="width:100%" alt="expandedImage">
+                                <div id="imgtext2"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--PROJECT 1-->
+                    <div id="Project1" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                        <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 1
+                            - Flat Renovation</h2>
+
+                        <p>My first contact with Unreal Engine, the early access to be specific.
+                            I decided to take the opportunity that I was renovating my flat in order to get started
+                            with Unreal and thus preview the layout and furniture of my flat project.
+                            With this project I learned the basics of materials and textures, a bit of modelling to
+                            alter the imported assets, the geometry tool to build walls and other miscellaneous
+                            details.</p>
+
+                        <!-- Expandable image -->
+                        <div>
+                            <div style="text-align:center">
+                                <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1R-U9Pm4PxHgCh6-e7CnSfHSpJq13sTod&sz=w4000"
+                                         alt="Living room" style="width:100%" onclick="Project1TabbedFunc(this);">
+                                </div>
+                                <div class="column">
+                                    <img src="https://drive.google.com/thumbnail?id=1wm51fRdL3onThpcLR7W14mQHeZFm6jNQ&sz=w4000"
+                                         alt="Kitchen and bedroom" style="width:100%"
+                                         onclick="Project1TabbedFunc(this);">
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="container">
+                                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                <img id="expandedImg1" style="width:100%" alt="expandedImage">
+                                <div id="imgtext1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large"
+                        onclick="topFunction()" id="myBtn" title="Go to top">
+                    <i data-feather="arrow-up" style="vertical-align: -0.35em;"></i>
+                    <span class="w3-margin-left download-text">Top</span>
                 </button>
 
-                <div id="myCollapse" class="w3-hide">
-                </div>
-                -->
-                <p class="w3-container">
-                    <a href="#Project9"
-                        class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
-                        onclick="toggleNavigation()">
-                        <span class="left">Project 9 </span><span class="centre"><b>Nagy</b></span>
-                    </a>
-                </p>
-                <p class="w3-container">
-                    <a href="#Project8"
-                        class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
-                        onclick="toggleNavigation()">
-                        <span class="left">Project 8 </span><span class="centre"><b>Tile selector</b></span>
-                    </a>
-                </p>
-                <p class="w3-container">
-                    <a href="#Project7"
-                        class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
-                        onclick="toggleNavigation()">
-                        <span class="left">Project 7 </span><span class="centre"><b>Castle Environment</b></span>
-                    </a>
-                </p>
-                <p class="w3-container">
-                    <a href="#Project6"
-                        class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
-                        onclick="toggleNavigation()">
-                        <span class="left">Project 6 </span><span class="centre"><b>Animal Crossing</b></span>
-                    </a>
-                </p>
-                <p class="w3-container">
-                    <a href="#Project5"
-                        class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
-                        onclick="toggleNavigation()">
-                        <span class="left">Project 5 </span><span class="centre"><b>Sequencer</b></span>
-                    </a>
-                </p>
-                <p class="w3-container">
-                    <a href="#Project4"
-                        class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
-                        onclick="toggleNavigation()">
-                        <span class="left">Project 4 </span><span class="centre"><b>Window</b></span>
-                    </a>
-                </p>
-                <p class="w3-container">
-                    <a href="#Project3"
-                        class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
-                        onclick="toggleNavigation()">
-                        <span class="left">Project 3 </span><span class="centre"><b>Nanite Environment</b></span>
-                    </a>
-                </p>
-                <p class="w3-container">
-                    <a href="#Project2"
-                        class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
-                        onclick="toggleNavigation()">
-                        <span class="left">Project 2 </span><span class="centre"><b>Wasteland</b></span>
-                    </a>
-                </p>
-                <p class="w3-container">
-                    <a href="#Project1"
-                        class="w3-round-xxlarge w3-amber w3-bar-item w3-button w3-center w3-hover-deep-orange w3-border-white w3-bottombar"
-                        onclick="toggleNavigation()">
-                        <span class="left">Project 1 </span><span class="centre"><b>Flat Renovation</b></span>
-                    </a>
-                </p>
+                <script>
+                    // Get the button
+                    let mybutton = document.getElementById("myBtn");
+
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function () {
+                        scrollFunction()
+                    };
+
+                    function scrollFunction() {
+                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                            mybutton.style.display = "block";
+                        } else {
+                            mybutton.style.display = "none";
+                        }
+                    }
+
+                    // When the user clicks on the button, scroll to the top of the document
+                    function topFunction() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                    }
+                </script>
             </div>
-        </section>
-
-
-        <!-- MAIN BODY -->
-        <section class="w3-threequarter w3-padding-large w3-right">
-            <!--DESKTOP NAVIGATION (header )-->
-            <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
-                <a class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large"
-                    href="./">
-                    <i data-feather="arrow-left" style="vertical-align: -0.35em;"></i>
-                    <span class="w3-margin-left download-text">BACK</span>
-                </a>
-                <p class="w3-bar-item w3-right w3-hide-small" style="border-width: 2px !important">Angel Farre Echaburua
-                </p>
-            </div>
-            <div class="content-container w3-margin-top-2">
-                <!--RESUME-->
-                <div id="resume" class="w3-container w3-margin-top-2 w3-cursive w3-large">
-                    <div class="w3-container w3-padding-32" id="resume">
-                        <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">PROJECTS</h2>
-                    </div>
-                    <p>Here you can find more about my personal projects. Some are artistic in nature as they focus on
-                        environment or sequencer, others are
-                        C++ focused projects. While my early projects are far from perfect and have many flaws, they
-                        helped me learn in depth how to work in
-                        Unreal Engine. Each project helped me become knowledgeable in one or more topics, making me
-                        capable today of developing rich environments
-                        supported by a reusable and modular programming allowing for a quick growth in game content.
-                    </p>
-                    <div class="w3-container w3-margin-top-2 w3-cursive">
-
-                        <!-- Projects tabbed image gallery -->
-                        <div class="w3-row-padding">
-                            <a href="#Project9">
-                                <div class="w3-col l4 m6 w3-margin-bottom">
-                                    <div class="w3-display-container" style="width:95%">
-                                        <img class="index-tabbed-gallery" src="https://drive.google.com/thumbnail?id=1JqB87koFnRwPQc0X8lOkN1R9-jjjLTYg&sz=w4000" alt="House" style="width:100%">
-
-                                        <div class="w3-display-topleft w3-amber gallery-text">Nagy</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#Project8">
-                                <div class="w3-col l4 m6 w3-margin-bottom">
-                                    <div class="w3-display-container" style="width:95%">
-                                        <img class="index-tabbed-gallery" src="https://drive.google.com/thumbnail?id=1r6ONgzgqZi138RIKrfcA3e88M7IPyiwC&sz=w4000" alt="House" style="width:100%">
-
-                                        <div class="w3-display-topleft w3-amber gallery-text">Tile selector</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#Project7">
-                                <div class="w3-col l4 m6 w3-margin-bottom">
-                                    <div class="w3-display-container" style="width:95%">
-                                        <img class="index-tabbed-gallery" src="https://drive.google.com/thumbnail?id=1Pn6m0ofGTpHn7NURSw_SFsy-2XiCNELN&sz=w4000" alt="House" style="width:100%">
-
-                                        <div class="w3-display-topleft w3-amber gallery-text">Castle Environment</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#Project6">
-                                <div class="w3-col l4 m6 w3-margin-bottom">
-                                    <div class="w3-display-container" style="width:95%">
-                                        <img class="index-tabbed-gallery" src="https://drive.google.com/thumbnail?id=10mHgsUVRs_AqlFXI5HcnOd0gLXqLIr6Y&sz=w4000" alt="House" style="width:100%">
-
-                                        <div class="w3-display-topleft w3-amber gallery-text">Animal Crossing</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#Project5">
-                                <div class="w3-col l4 m6 w3-margin-bottom">
-                                    <div class="w3-display-container" style="width:95%">
-                                        <img class="index-tabbed-gallery" src="https://drive.google.com/thumbnail?id=1JZLip3ys5rs1iFfQF4khkK-7s4bCcG4M&sz=w4000" alt="House" style="width:100%">
-
-                                        <div class="w3-display-topleft w3-amber gallery-text">Sequencer</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#Project4">
-                                <div class="w3-col l4 m6 w3-margin-bottom">
-                                    <div class="w3-display-container" style="width:95%">
-                                        <img class="index-tabbed-gallery"  src="https://drive.google.com/thumbnail?id=1QrYM4LcZUU-n7rGP9FkL-ZAKH0KoR5QW&sz=w4000" alt="House" style="width:100%">
-
-                                        <div class="w3-display-topleft w3-amber gallery-text">Window</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#Project3">
-                                <div class="w3-col l4 m6 w3-margin-bottom">
-                                    <div class="w3-display-container" style="width:95%">
-                                        <img class="index-tabbed-gallery"  src="https://drive.google.com/thumbnail?id=1J8EtG3X1jt0-3O0dPiCBtx7n9sTK10QJ&sz=w4000" alt="House" style="width:100%">
-
-                                        <div class="w3-display-topleft w3-amber gallery-text">Nanite Environment</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#Project2">
-                                <div class="w3-col l4 m6 w3-margin-bottom">
-                                    <div class="w3-display-container" style="width:95%">
-                                        <img class="index-tabbed-gallery" src="https://drive.google.com/thumbnail?id=1aMYvNG7wtVqZ1tfms4UbytVlXhZAJFKx&sz=w4000" alt="House" style="width:100%">
-
-                                        <div class="w3-display-topleft w3-amber gallery-text">Wasteland</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#Project1">
-                                <div class="w3-col l4 m6 w3-margin-bottom">
-                                    <div class="w3-display-container" style="width:95%">
-                                        <img class="index-tabbed-gallery" src="https://drive.google.com/thumbnail?id=1R-U9Pm4PxHgCh6-e7CnSfHSpJq13sTod&sz=w4000" alt="Flat" style="width:100%">
-
-                                        <div class="w3-display-topleft w3-amber gallery-text">Flat Renovation</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--PROJECT 9-->
-                        <div id="Project9" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-                            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 9
-                                - Nagy</h3>
-
-                                <p>Work in progress. Reusing the <a href="#Project5">Sequencer</a> map I created this
-                                    project to focus in C++ much like my previous tile project, but this time focused on
-                                    a more "gamified" set of features.
-                                    Whilst the previous project was great at showcasing C++ excellence in an Unreal
-                                    environment, it had little in terms of gameplay and the AI, interactions, damage
-                                    handling and other features that come with it. This project
-                                    aims to fix that and also adds Data Tables, Data Assets and pure C++ UI to my
-                                    knowledge pool.</p>
-                                <p><br>At its present state, the player is capable of picking a primary and a secondary weapon and can cast 2 spells. Enemies have a basic follow AI and
-                a damage system. Melee weapon damage collision has been done with traces. A strong emphasis has been placed in code reusability and abstraction.<br>Code available on its public
-                                    <a href="https://github.com/afarre/UE5_Nagy">GitHub repository</a>.
-                                </p>
-
-                                <!-- Video -->
-                                <div class="iframe-container">
-                                    <iframe class="responsive-iframe"
-                                        src="https://www.youtube.com/embed/27zpCdApqXo"></iframe>
-                                </div>
-                        </div>
-
-                        <!--PROJECT 8-->
-                        <div id="Project8" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-                            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 8
-                                - Tile Selector</h3>
-
-                                <p>This Dynamic Tile selector project allowed me to gain sound programming knowledge
-                                    with Unreal. This C++ focused project is capable of detecting when the user adds
-                                    images to a predefined folder, and then it converts the images to
-                                    textures that can be used in game live. The textures are then used to change the
-                                    material of the bathroom walls. This project also allows you to take screenshots,
-                                    save and load and navigate to/edit the folders used to drop images and to
-                                    store the screenshots taken by the user, all inside of Unreal. <br>Additional GIFs and code available on its public
-                                    <a href="https://github.com/afarre/UE5_DynamicTileSelector">GitHub repository</a>.
-                                </p>
-
-                                <!-- Video -->
-                                <div class="iframe-container">
-                                    <iframe class="responsive-iframe"
-                                        src="https://www.youtube.com/embed/36dZkRyt4uU"></iframe>
-                                </div>
-                        </div>
-
-                        <!--PROJECT 7-->
-                        <div id="Project7" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-                            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 7
-                                - Castle Environment</h3>
-
-                                <p>This project contains a compilation of all the knowledge I had acquired up to this
-                                    point. Besides the aforementioned topics learned, I also introduced world and local
-                                    aligned textures and pixel dithering to aid me blend the different meshes
-                                    that compose the environment. I also introduced some localised VFX particles. <br>I also expanded on my programming as not only can you interact with elements, but there are damageable enemies and objects that damage the player. While the enemies
-                    lack AI, I did implement some AI for the deer scattered around the world. I also added UI elements such as health bars and a menu. I dropped this project some time later as I had learned much with it, but my code was far from clean, and
-                    I deemed it more worth to begin a new project with the good practices and knowledge I had acquired while working on this one.
-                                </p>
-
-                                <!-- Expandable image -->
-                                <div>
-                                    <div style="text-align:center">
-                                        <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
-                                    </div>
-                                    <div class="row">
-                                        <div class="column">
-                                            <img src="https://drive.google.com/thumbnail?id=1Pn6m0ofGTpHn7NURSw_SFsy-2XiCNELN&sz=w4000" alt="Overview" style="width:100%" onclick="Project7TabbedFunc(this);">
-                                        </div>
-                                        <div class="column">
-                                            <img src="https://drive.google.com/thumbnail?id=1EugY9gCYQtkkJ7Jvu8IdVIpH-KvWjtAj&sz=w4000" alt="UI and localised forest lighting" style="width:100%" onclick="Project7TabbedFunc(this);">
-                                        </div>
-                                        <div class="column">
-                                            <img src="https://drive.google.com/thumbnail?id=1YElRZM-agfuysWRP0PByRZTKxcrSQG-F&sz=w4000" alt="Pause menu" style="width:100%" onclick="Project7TabbedFunc(this);">
-                                        </div>
-                                    </div>
-
-                                    <br>
-
-                                    <div class="container">
-                                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                                        <img id="expandedImg7" style="width:100%">
-                                        <div id="imgtext7"></div>
-                                    </div>
-                                </div>
-
-                                <br>
-
-                                <div class="iframe-container">
-                                    <iframe class="responsive-iframe"
-                                        src="https://www.youtube.com/embed/iVxCx8DT3CQ"></iframe>
-                                </div>
-                        </div>
-
-                        <!--PROJECT 6-->
-                        <div id="Project6" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-                            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 6
-                                - Low Poly Animal Crossing</h3>
-
-                                <p>In this third assignment of my Masters, we had the task to create any environment we
-                                    desired with the only restriction being that it had to be with low poly assets.
-                                    Besides the creation of the environment per se, which was a diorama of an
-                                    Animal Crossing inspired island, I also utilised splines in order to help me add the
-                                    roads and lamps to the map.
-                                </p>
-
-                                <!-- Expandable image -->
-                                <div>
-                                    <div style="text-align:center">
-                                        <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
-                                    </div>
-                                    <div class="row">
-                                        <div class="column">
-                                            <img src="https://drive.google.com/thumbnail?id=10mHgsUVRs_AqlFXI5HcnOd0gLXqLIr6Y&sz=w4000" alt="Closeup" style="width:100%" onclick="Project6TabbedFunc(this);">
-                                        </div>
-                                        <div class="column">
-                                            <img src="https://drive.google.com/thumbnail?id=1UBOE0Pw-Kkz8W2yMmhAHL4zcOoAQpygV&sz=w4000" alt="Overview" style="width:100%" onclick="Project6TabbedFunc(this);">
-                                        </div>
-                                    </div>
-
-                                    <br>
-
-                                    <div class="container">
-                                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                                        <img id="expandedImg6" style="width:100%">
-                                        <div id="imgtext6"></div>
-                                    </div>
-                                </div>
-
-                                <br>
-
-                                <div class="iframe-container">
-                                    <iframe class="responsive-iframe"
-                                        src="https://www.youtube.com/embed/s8vI1Wcrokk"></iframe>
-                                </div>
-                        </div>
-
-                        <!--PROJECT 5-->
-                        <div id="Project5" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-                            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 5
-                                - Sequencer</h3>
-
-                                <p>As a second assignment of the Masters, we were to create a Sequence trailer of any
-                                    topic of our preference. I organically came upon this arena design in which a
-                                    champion faces against some sort of boss. Whilst the assets, soundtracks
-                                    and other raw elements are borrowed from free sources such as Sketchfab, the entire
-                                    composition, camera layout, lighting and so on are entirely of my own doing.
-                                </p>
-
-                                <!-- Video -->
-                                <div class="iframe-container">
-                                    <iframe class="responsive-iframe"
-                                        src="https://www.youtube.com/embed/Pa-hbj_moos"></iframe>
-                                </div>
-                        </div>
-
-                        <!--PROJECT 4-->
-                        <div id="Project4" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-                            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 4
-                                - Window</h3>
-
-                                <p>This small project was an early assignment of my Master's degree in which we had to
-                                    replicate the reference image provided.
-                                    During the course of an evening, I delivered the seen result. While the general
-                                    distribution and lighting was pretty similar, I took some artistic liberty and
-                                    changed the background to fit with the free assets I used from the Megascans
-                                    library.</p>
-
-                                <!-- Expandable image -->
-                                <div>
-                                    <div style="text-align:center">
-                                        <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
-                                    </div>
-                                    <div class="row">
-                                        <div class="column">
-                                            <img src="https://drive.google.com/thumbnail?id=1QrYM4LcZUU-n7rGP9FkL-ZAKH0KoR5QW&sz=w4000" alt="Result" style="width:100%" onclick="Project4TabbedFunc(this);">
-                                        </div>
-                                        <div class="column">
-                                            <img src="https://drive.google.com/thumbnail?id=1Iy0eFNiiwNYCz8lmFqgf022jbVWxm3ro&sz=w4000" alt="Reference" style="width:100%" onclick="Project4TabbedFunc(this);">
-                                        </div>
-                                    </div>
-
-                                    <br>
-
-                                    <div class="container">
-                                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                                        <img id="expandedImg4" style="width:100%">
-                                        <div id="imgtext4"></div>
-                                    </div>
-                                </div>
-                        </div>
-
-                        <!--PROJECT 3-->
-                        <div id="Project3" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-                            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 3
-                                - Nanite Environment</h3>
-
-                                <p>Inspired by <a
-                                        href="https://docs.unrealengine.com/5.0/en-US/valley-of-the-ancient-sample-game-for-unreal-engine/">Valley
-                                        of the Ancient</a> and the developer's explanation on how Nanite was utilised to
-                                    create the entire scene,
-                                    I decided to try something similar. I also took my first steps in programming as
-                                    there were some interactive elements scattered around. I also started learning a bit
-                                    on optimisation as well as the information that different view modes
-                                    Unreal offers. I also touched slightly the camera's parameters such as focus, aperture,
-                                    lighting, etc.</p>
-
-                                <!-- Expandable image -->
-                                <div>
-                                    <div style="text-align:center">
-                                        <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
-                                    </div>
-                                    <div class="row">
-                                        <div class="column">
-                                            <img src="https://drive.google.com/thumbnail?id=1J8EtG3X1jt0-3O0dPiCBtx7n9sTK10QJ&sz=w4000" alt="Camera and lighting test 1" style="width:100%" onclick="Project3TabbedFunc(this);">
-                                        </div>
-                                        <div class="column">
-                                            <img src="https://drive.google.com/thumbnail?id=1jY0b4nh_GP8w1qRdnk3KE9_03iwMrvRS&sz=w4000" alt="Camera and lighting test 2" style="width:100%" onclick="Project3TabbedFunc(this);">
-                                        </div>
-                                        <div class="column">
-                                            <img src="https://drive.google.com/thumbnail?id=1dwbMYR1RnyAA4nbj_K86fy9VCSwAso_R&sz=w4000" alt="Camera and lighting test 3" style="width:100%" onclick="Project3TabbedFunc(this);">
-                                        </div>
-                                        <div class="column">
-                                            <img src="https://drive.google.com/thumbnail?id=19abmitOb3XplwM9ky_jywYYKcB0nL3N0&sz=w4000" alt="Interactive elements" style="width:100%" onclick="Project3TabbedFunc(this);">
-                                        </div>
-                                        <div class="column">
-                                            <img src="https://drive.google.com/thumbnail?id=1WqTK1qNIfvsUzCtx-0WB24wrmDQ9xWQV&sz=w4000" alt="Overview" style="width:100%" onclick="Project3TabbedFunc(this);">
-                                        </div>
-                                    </div>
-
-                                    <br>
-
-                                    <div class="container">
-                                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                                        <img id="expandedImg3" style="width:100%">
-                                        <div id="imgtext3"></div>
-                                    </div>
-                                </div>
-                        </div>
-
-                        <!--PROJECT 2-->
-                        <div id="Project2" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-                            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 2
-                                - Wasteland</h2>
-
-                            <p>A first attempt at an open world. While far from decent, it game me good knowledge on the
-                                terrain modelling and foliage tools.
-                                I also expanded on materials with texture tiling and similar adjustments. The
-                                inspiration for this quick scene came from
-                                Fallout 4's glowing see (although without the excessive green tone).
-                            </p>
-
-                            <!-- Expandable image -->
-                            <div>
-                                <div style="text-align:center">
-                                    <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
-                                </div>
-                                <div class="row">
-                                    <div class="column">
-                                        <img src="https://drive.google.com/thumbnail?id=1aMYvNG7wtVqZ1tfms4UbytVlXhZAJFKx&sz=w4000" alt="Shot 1" style="width:100%" onclick="Project2TabbedFunc(this);">
-                                    </div>
-                                    <div class="column">
-                                        <img src="https://drive.google.com/thumbnail?id=11RuSq-gp_pBo04CC_R_ofrkVEuaSVXsy&sz=w4000" alt="Shot 2" style="width:100%" onclick="Project2TabbedFunc(this);">
-                                    </div>
-                                    <div class="column">
-                                        <img src="https://drive.google.com/thumbnail?id=1OEXzLfEWgDBTY0zVbk-h2UhAj08zuxay&sz=w4000" alt="Reference 1 - Fallout 4 glowing sea" style="width:100%" onclick="Project2TabbedFunc(this);">
-                                    </div>
-                                    <div class="column">
-                                        <img src="https://drive.google.com/thumbnail?id=1tIc3pVGqYlZNWAuhMr6s0PYKWz-HtaPh&sz=w4000" alt="Reference 2 - Fallout 4 glowing sea" style="width:100%" onclick="Project2TabbedFunc(this);">
-                                    </div>
-                                </div>
-
-                                <br>
-
-                                <div class="container">
-                                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                                    <img id="expandedImg2" style="width:100%">
-                                    <div id="imgtext2"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--PROJECT 1-->
-                        <div id="Project1" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-                            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Project 1
-                                - Flat Renovation</h2>
-
-                            <p>My first contact with Unreal Engine, the early access to be specific.
-                                I decided to take the opportunity that I was renovating my flat in order to get started
-                                with Unreal and thus preview the layout and furniture of my flat project.
-                                With this project I learned the basics of materials and textures, a bit of modelling to
-                                alter the imported assets, the geometry tool to build walls and other miscellaneous
-                                details.</p>
-
-                            <!-- Expandable image -->
-                            <div>
-                                <div style="text-align:center">
-                                    <p style="font-size:16px"><b>Click on the images below to expand:</b></p>
-                                </div>
-                                <div class="row">
-                                    <div class="column">
-                                        <img src="https://drive.google.com/thumbnail?id=1R-U9Pm4PxHgCh6-e7CnSfHSpJq13sTod&sz=w4000" alt="Living room" style="width:100%" onclick="Project1TabbedFunc(this);">
-                                    </div>
-                                    <div class="column">
-                                        <img src="https://drive.google.com/thumbnail?id=1wm51fRdL3onThpcLR7W14mQHeZFm6jNQ&sz=w4000" alt="Kitchen and bedroom" style="width:100%" onclick="Project1TabbedFunc(this);">
-                                    </div>
-                                </div>
-
-                                <br>
-
-                                <div class="container">
-                                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                                    <img id="expandedImg1" style="width:100%">
-                                    <div id="imgtext1"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <button class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" onclick="topFunction()" id="myBtn" title="Go to top">
-            <i data-feather="arrow-up" style="vertical-align: -0.35em;"></i>
-            <span class="w3-margin-left download-text">Top</span>
-        </button>
-
-                    <script>
-                        // Get the button
-            let mybutton = document.getElementById("myBtn");
-
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-
-            function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-            }
-
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-            }
-                    </script>
-
-
-                    <!--FOOTER-->
-                    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-                    <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
-                        <p>© 2024 - Angel Farre Echaburua</p>
-                        <p class="w3-small">This website was made with W3schools Spaces. Make your own free website
-                            today!</p>
-                        <a class="w3-button w3-round-xxlarge w3-small w3-light-grey"
-                            href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
-                        <!-- End footer -->
-                    </footer>
-
-                    <!--END OF CV SECTION-->
-        </section>
+        </div>
     </section>
-    <script>
-        // Function to toggle mobile navigation
-      function toggleNavigation() {
+</section>
+<script>
+    // Function to toggle mobile navigation
+    function toggleNavigation() {
         let nav = document.getElementById("mobile-nav");
         if (nav.classList.contains('w3-show')) {
-          nav.classList.remove('w3-show');
-        } else { 
-          nav.classList.add('w3-show');
+            nav.classList.remove('w3-show');
+        } else {
+            nav.classList.add('w3-show');
         }
-      }
-    </script>
-    <script>
-        // Script to load feather icons
-      feather.replace()
-    </script>
+    }
+</script>
+<script>
+    // Script to load feather icons
+    feather.replace()
+</script>
 </body>
 
 </html>
